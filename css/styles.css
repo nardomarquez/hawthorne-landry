@@ -10,8 +10,11 @@
   --font-size: 1rem;
   --font-sans: "Helvetica Neue", Helvetica, sans-serif;
   --color-text: #000;
+  --color-gray: #999999;
+  --color-light-gray: #dddddd;
   --page-padding: 0.75rem;
-  --grid-gap: var(--page-padding);
+  --grid-gap: 0.75rem;
+  --section-gap: 96px;
 }
 
 body {
@@ -53,4 +56,116 @@ img {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+thead > tr {
+  border-bottom: 1px solid var(--color-text);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+tbody > tr {
+  color: var(--color-gray);
+  border-bottom: 1px solid var(--color-light-gray);
+  padding: 0.25rem 0;
+}
+
+th {
+  font-weight: 500;
+  text-align: left;
+}
+
+.container {
+  padding: var(--page-padding);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--grid-gap);
+}
+
+.header {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+
+  margin-bottom: var(--section-gap);
+}
+
+.header__nav {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.header__links {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.header__link {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hero {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+  margin-bottom: var(--section-gap);
+}
+
+.hero__container {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.hero__text {
+  grid-column: 1 / 2;
+}
+
+.hero__links {
+  grid-column: 4 / 5;
+}
+
+.featured-projects {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.featured-projects__container {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.featured-projects__media {
+  grid-column: 4 / 5;
+}
+
+.featured-projects__table {
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.featured-projects__table-head {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.featured-projects__table-body {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.featured-projects__table-row {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
 }
