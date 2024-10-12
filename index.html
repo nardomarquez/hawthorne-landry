@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <div class="cursor"></div>
+
     <div class="container">
       <header class="header">
         <h1 class="header__title">Hawthorne-Landry</h1>
@@ -38,9 +40,8 @@
 
       <section id="featured-projects" class="featured-projects">
         <div class="featured-projects__container">
-          <div class="featured-projects__media" style="display: none">
+          <div class="featured-projects__media">
             <p class="featured-projects__year">2024</p>
-
             <img src="/assets/1.jpg" alt="" class="featured-projects__image" />
           </div>
 
@@ -230,7 +231,7 @@
           <div class="archive__year">
             <p>2024</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/1.jpg">
                 <p>Solace</p>
                 <p>Copenhagen, Denmark</p>
                 <p>Luxury Residential</p>
@@ -240,17 +241,17 @@
           <div class="archive__year">
             <p>2023</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/6.jpg">
                 <p>Amara Point</p>
                 <p>Oslo, Norway</p>
                 <p>Mixed-Use Development</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/5.jpg">
                 <p>Riviera Court</p>
                 <p>Malmo, Sweden</p>
                 <p>Commercial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/4.jpg">
                 <p>Echo Lane</p>
                 <p>Antwerp, Belgium</p>
                 <p>Commercial</p>
@@ -260,27 +261,27 @@
           <div class="archive__year">
             <p>2022</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/2.jpg">
                 <p>Fiorenza Place</p>
                 <p>Aalborg, Denmark</p>
                 <p>Luxury Residential</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/7.jpg">
                 <p>Lumière Lane</p>
                 <p>Bordeaux, France</p>
                 <p>Residential Tower</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/8.jpg">
                 <p>Verde Block</p>
                 <p>Portland, Maine, USA</p>
                 <p>Industrial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/9.jpg">
                 <p>Città</p>
                 <p>Copenhagen, Denmark</p>
                 <p>Mixed-Use Development</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/10.jpg">
                 <p>Aether</p>
                 <p>Malmo, Sweden</p>
                 <p>Luxury Residential</p>
@@ -290,22 +291,22 @@
           <div class="archive__year">
             <p>2021</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/11.jpg">
                 <p>Mystic Avenue</p>
                 <p>Porto, Portugal</p>
                 <p>Luxury Residential</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/12.jpg">
                 <p>Noble Court</p>
                 <p>Galway, Ireland</p>
                 <p>Mixed-Use Development</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/13.jpg">
                 <p>Terra</p>
                 <p>Helsingborg, Sweden</p>
                 <p>Industrial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/14.jpg">
                 <p>Elementum</p>
                 <p>Odense, Denmark</p>
                 <p>Industrial</p>
@@ -315,17 +316,17 @@
           <div class="archive__year">
             <p>2020</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/19.jpg">
                 <p>Rivenstone</p>
                 <p>Charleston, USA</p>
                 <p>Commercial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/20.jpg">
                 <p>Pinnacle Block</p>
                 <p>Copenhagen, Denmark</p>
                 <p>Commercial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/21.jpg">
                 <p>Illume</p>
                 <p>Rotterdam, Netherlands</p>
                 <p>Leisure & Hospitality</p>
@@ -335,17 +336,17 @@
           <div class="archive__year">
             <p>2019</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/22.jpg">
                 <p>Vesper</p>
                 <p>Ghent, Belgium</p>
                 <p>Commercial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/15.jpg">
                 <p>Emberlyn District</p>
                 <p>Montreal, Canada</p>
                 <p>Leisure & Hospitality</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/17.jpg">
                 <p>Vista Park</p>
                 <p>Oslo, Norway</p>
                 <p>Public Spaces</p>
@@ -355,17 +356,17 @@
           <div class="archive__year">
             <p>2018</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/3.jpg">
                 <p>Solstice Tower</p>
                 <p>Reykjavik, Iceland</p>
                 <p>Luxury Residential</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/23.jpg">
                 <p>Astra</p>
                 <p>Ghent, Belgium</p>
                 <p>Commercial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/16.jpg">
                 <p>Eclipse</p>
                 <p>Charleston, USA</p>
                 <p>Leisure & Hospitality</p>
@@ -375,17 +376,17 @@
           <div class="archive__year">
             <p>2017</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/18.jpg">
                 <p>Tranquil</p>
                 <p>Aarhus, Denmark</p>
                 <p>Public Spaces</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/24.jpg">
                 <p>Crescent</p>
                 <p>Santa Fe, USA</p>
                 <p>Luxury Residential</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/25.jpg">
                 <p>Radiant Avenue</p>
                 <p>Helsinki, Finland</p>
                 <p>Mixed-Use Development</p>
@@ -395,17 +396,17 @@
           <div class="archive__year">
             <p>2016</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/26.jpg">
                 <p>Luna Avenue</p>
                 <p>Odense, Denmark</p>
                 <p>Mixed-Use Development</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/27.jpg">
                 <p>Celestial</p>
                 <p>Miami, USA</p>
                 <p>Residential Tower</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/28.jpg">
                 <p>Helios Plaza</p>
                 <p>Odense, Denmark</p>
                 <p>Leisure & Hospitality</p>
@@ -415,17 +416,17 @@
           <div class="archive__year">
             <p>2015</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/29.jpg">
                 <p>Alchemy Tower</p>
                 <p>Helsinki, Finland</p>
                 <p>Mixed-Use Development</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/30.jpg">
                 <p>Seraphine</p>
                 <p>Ljubljana, Slovenia</p>
                 <p>Commercial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/31.jpg">
                 <p>Vantage</p>
                 <p>Tallinn, Estonia</p>
                 <p>Mixed-Use Development</p>
@@ -435,7 +436,7 @@
           <div class="archive__year">
             <p>2014</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/14.jpg">
                 <p>Elysium</p>
                 <p>Thessaloniki, Greece</p>
                 <p>Luxury Residential</p>
@@ -445,7 +446,7 @@
           <div class="archive__year">
             <p>2013</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/32.jpg">
                 <p>Starlight District</p>
                 <p>New Orleans, USA</p>
                 <p>Mixed-Use Development</p>
@@ -455,22 +456,22 @@
           <div class="archive__year">
             <p>2012</p>
             <div class="archive__projects">
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/33.jpg">
                 <p>Verdant Tower</p>
                 <p>Reykjavik, Iceland</p>
                 <p>Industrial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/34.jpg">
                 <p>Harmony Block</p>
                 <p>Gothenburg, Sweden</p>
                 <p>Commercial</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/35.jpg">
                 <p>Allegro Point</p>
                 <p>Dublin, Ireland</p>
                 <p>Mixed-Use Development</p>
               </div>
-              <div class="archive__project">
+              <div class="archive__project" data-src="/assets/36.jpg">
                 <p>Nova Lane</p>
                 <p>Tallinn, Estonia</p>
                 <p>Commercial</p>
@@ -481,6 +482,7 @@
       </section>
     </div>
 
-    <script src="/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="/index.js"></script>
   </body>
 </html>
