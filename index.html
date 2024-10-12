@@ -11,7 +11,7 @@
     />
     <meta name="keywords" content="" />
     <meta name="author" content="Nardo Marquez" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div class="container">
@@ -38,105 +38,188 @@
 
       <section id="featured-projects" class="featured-projects">
         <div class="featured-projects__container">
-          <picture class="featured-projects__media">
-            <img src="" alt="" class="featured-projects__image" />
-          </picture>
+          <div class="featured-projects__media" style="display: none">
+            <p class="featured-projects__year">2024</p>
 
-          <table class="featured-projects__table">
-            <thead class="featured-projects__table-head">
-              <tr class="featured-projects__table-row">
-                <th>Category</th>
-                <th>Project</th>
-                <th>Location</th>
-              </tr>
-            </thead>
-            <tbody class="featured-projects__table-body">
-              <tr class="featured-projects__table-row">
-                <!-- Luxury Residential -->
-                <td rowspan="3">Luxury Residential</td>
-                <td>Solace</td>
-                <td>Copenhagen, Denmark</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Fiorenza Place</td>
-                <td>Aalborg, Denmark</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Solstice Tower</td>
-                <td>Reykjavik, Iceland</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <!-- Commercial -->
-                <td rowspan="4">Commercial</td>
-                <td>Echo Lane</td>
-                <td>Portland, Maine, USA</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Riviera Court</td>
-                <td>Malmo, Sweden</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Pinnacle Block</td>
-                <td>Copenhagen, Denmark</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Rivenstone</td>
-                <td>Charleston, USA</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <!-- Industrial -->
-                <td rowspan="2">Industrial</td>
-                <td>Harmony Block</td>
-                <td>Gothenburg, Sweden</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Verdant Tower</td>
-                <td>Reykjavik, Iceland</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <!-- Mixed-Use Development -->
-                <td rowspan="4">Mixed-Use Development</td>
-                <td>Amara Point</td>
-                <td>Oslo, Norway</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Città</td>
-                <td>Copenhagen, Denmark</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Alchemy Tower</td>
-                <td>Helsinki, Finland</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Luna Avenue</td>
-                <td>Odense, Denmark</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <!-- Leisure & Hospitality -->
-                <td rowspan="3">Leisure & Hospitality</td>
-                <td>Elysium</td>
-                <td>Thessaloniki, Greece</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Emberlyn District</td>
-                <td>Montreal, Canada</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Solstice Tower</td>
-                <td>Reykjavik, Iceland</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <!-- Public Spaces -->
-                <td rowspan="2">Public Spaces</td>
-                <td>Aether</td>
-                <td>Odense, Denmark</td>
-              </tr>
-              <tr class="featured-projects__table-row">
-                <td>Tranquil</td>
-                <td>Aarhus, Denmark</td>
-              </tr>
-            </tbody>
-          </table>
+            <img src="/assets/1.jpg" alt="" class="featured-projects__image" />
+          </div>
+
+          <div class="featured-projects__categories">
+            <div class="featured-projects__category">
+              <p>Luxury Residential</p>
+              <div class="featured-projects__projects">
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/1.jpg"
+                  data-year="2024"
+                >
+                  <p>Solace</p>
+                  <p>Copenhagen, Denmark</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/2.jpg"
+                  data-year="2022"
+                >
+                  <p>Fiorenza Place</p>
+                  <p>Aalborg, Denmark</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/3.jpg"
+                  data-year="2014"
+                >
+                  <p>Solstice Tower</p>
+                  <p>Reykjavik, Iceland</p>
+                </div>
+              </div>
+            </div>
+            <div class="featured-projects__category">
+              <p>Commercial</p>
+              <div class="featured-projects__projects">
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/4.jpg"
+                  data-year="2023"
+                >
+                  <p>Echo Lane</p>
+                  <p>Portland, Maine, USA</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/5.jpg"
+                  data-year="2023"
+                >
+                  <p>Riviera Court</p>
+                  <p>Malmo, Sweden</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/6.jpg"
+                  data-year="2017"
+                >
+                  <p>Pinnacle Block</p>
+                  <p>Copenhagen, Denmark</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/7.jpg"
+                  data-year="2019"
+                >
+                  <p>Rivenstone</p>
+                  <p>Charleston, USA</p>
+                </div>
+              </div>
+            </div>
+            <div class="featured-projects__category">
+              <p>Industrial</p>
+              <div class="featured-projects__projects">
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/8.jpg"
+                  data-year="2004"
+                >
+                  <p>Harmony Block</p>
+                  <p>Gothenburg, Sweden</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/9.jpg"
+                  data-year="2005"
+                >
+                  <p>Verdant Tower</p>
+                  <p>Reykjavik, Iceland</p>
+                </div>
+              </div>
+            </div>
+            <div class="featured-projects__category">
+              <p>Mixed-Use Development</p>
+              <div class="featured-projects__projects">
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/10.jpg"
+                  data-year="2023"
+                >
+                  <p>Amara Point</p>
+                  <p>Oslo, Norway</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/11.jpg"
+                  data-year="2021"
+                >
+                  <p>Città</p>
+                  <p>Copenhagen, Denmark</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/12.jpg"
+                  data-year="2009"
+                >
+                  <p>Alchemy Tower</p>
+                  <p>Helsinki, Finland</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/13.jpg"
+                  data-year="2011"
+                >
+                  <p>Luna Avenue</p>
+                  <p>Odense, Denmark</p>
+                </div>
+              </div>
+            </div>
+            <div class="featured-projects__category">
+              <p>Leisure & Hospitality</p>
+              <div class="featured-projects__projects">
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/14.jpg"
+                  data-year="2007"
+                >
+                  <p>Elysium</p>
+                  <p>Thessaloniki, Greece</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/15.jpg"
+                  data-year="2015"
+                >
+                  <p>Emberlyn District</p>
+                  <p>Montreal, Canada</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/16.jpg"
+                  data-year="2014"
+                >
+                  <p>Solstice Tower</p>
+                  <p>Reykjavik, Iceland</p>
+                </div>
+              </div>
+            </div>
+            <div class="featured-projects__category">
+              <p>Public Spaces</p>
+              <div class="featured-projects__projects">
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/17.jpg"
+                  data-year="1999"
+                >
+                  <p>Aether</p>
+                  <p>Odense, Denmark</p>
+                </div>
+                <div
+                  class="featured-projects__project"
+                  data-src="/assets/18.jpg"
+                  data-year="2013"
+                >
+                  <p>Tranquil</p>
+                  <p>Aarhus, Denmark</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
