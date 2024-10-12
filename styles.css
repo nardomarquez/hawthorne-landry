@@ -9,7 +9,7 @@
 :root {
   --font-size: 1rem;
   --font-sans: "Helvetica Neue", Helvetica, sans-serif;
-  --color-text: #000;
+  --color-text: #0a0a0a;
   --color-gray: #b0b0b0;
   --color-light-gray: #dddddd;
   --page-padding: 0.75rem;
@@ -37,6 +37,14 @@ h6 {
   letter-spacing: 0.02em;
 }
 
+h2 {
+  font-size: 1rem;
+  border-bottom: 1px solid var(--color-text);
+  grid-column: 1/-1;
+  padding-bottom: 0.25rem;
+  margin-bottom: -1px;
+}
+
 ul,
 ol {
   list-style: none;
@@ -55,6 +63,7 @@ img {
 
 .container {
   padding: var(--page-padding);
+  padding-bottom: var(--section-gap);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--grid-gap);
@@ -114,12 +123,17 @@ img {
   grid-column: span 4;
   display: grid;
   grid-template-columns: subgrid;
+  margin-bottom: calc(var(--section-gap) * 2);
 }
 
 .featured-projects__container {
   grid-column: span 4;
   display: grid;
   grid-template-columns: subgrid;
+}
+
+.featured-projects__title {
+  grid-column: span 3;
 }
 
 .featured-projects__categories {
@@ -142,6 +156,10 @@ img {
 
 .featured-projects__category:hover {
   color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+.featured-projects__category:first-child {
   border-color: var(--color-text);
 }
 
@@ -203,4 +221,67 @@ img {
   height: 65vh;
   max-height: 456px;
   object-fit: cover;
+}
+
+.archive {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.archive__container {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.archive__year {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: subgrid;
+
+  border-top: 1px solid var(--color-light-gray);
+  color: var(--color-gray);
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.15s ease-out;
+}
+
+.archive__year:hover {
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+.archive__year:first-child {
+  border-color: var(--color-text);
+}
+
+.archive__year > p {
+  grid-column: 1 / 2;
+}
+
+.archive__projects {
+  grid-column: 2 / 5;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.archive__project {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: subgrid;
+
+  cursor: pointer;
+  color: var(--color-gray);
+  border-top: 1px solid var(--color-light-gray);
+  transition: all 0.15s ease-out;
+}
+
+.archive__project:hover {
+  color: var(--color-text);
+  background-color: var(--color-light-gray);
+}
+
+.archive__project:first-child {
+  border-top: none;
 }
